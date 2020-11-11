@@ -1,0 +1,133 @@
+/* Radovi */
+
+.works-container {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.works-image-container.con1 {
+  width: 40%;
+  float: left;
+  margin-right: 5rem;
+}
+
+.works-image-container.con2 {
+  clear: both;
+  float: right;
+  width: 50%;
+  margin-left: 5rem;
+}
+
+.works-image-container.con3 {
+  width: 40%;
+  float: left;
+  clear: right;
+  margin-right: 5rem;
+}
+
+.works-image-container.con4 {
+  clear: both;
+  float: right;
+  margin-left: 5rem;
+  width: 47%;
+}
+
+.works-image {
+  width: 100%;
+  display: block;
+}
+
+.works-description-container.desc2 {
+  clear: left;
+}
+
+.works-description-container.desc3 {
+  clear: right;
+}
+
+.works-description-container.desc4 {
+  clear: left;
+}
+
+.works-container__single-work-container {
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+
+.works-title {
+  font-size: 2.8rem;
+  color: black;
+  font-weight: bold;
+}
+
+.works-title.hidden-title {
+  display: none;
+}
+
+.works-description {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+
+.cistac {
+  clear: both;
+}
+
+/* MEDIA QUERY */
+
+/* 1000px */
+@media only screen and (max-width: 63em) {
+  .works-image-container.con1 {
+    margin-right: 2rem;
+  }
+
+  .works-image-container.con2 {
+    margin-left: 2rem;
+  }
+
+  .works-image-container.con3 {
+    margin-right: 2rem;
+  }
+
+  .works-image-container.con4 {
+    margin-left: 2rem;
+  }
+}
+
+/* 900px */
+@media only screen and (max-width: 56em) {
+  .works-image-container.con1,
+  .works-image-container.con2,
+  .works-image-container.con3,
+  .works-image-container.con4 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .works-title {
+    display: none;
+  }
+
+  .works-title.hidden-title {
+    display: block;
+    font-size: 2.8rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .works-description {
+    padding-top: 0rem;
+  }
+}
+
+/* 500px */
+@media only screen and (max-width: 32em) {
+  .works-title.hidden-title {
+    margin-bottom: 1rem;
+  }
+}

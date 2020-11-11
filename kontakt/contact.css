@@ -1,0 +1,188 @@
+.contact-container {
+  display: flex;
+}
+
+.main-container.cnt-con {
+  padding-bottom: 0;
+}
+
+.about.ctn {
+  padding-bottom: 2rem;
+}
+
+.form-container {
+  flex-basis: 45%;
+  display: grid;
+  grid-template-rows: repeat(3, max-content) 4rem;
+  padding-top: 2rem;
+  grid-row-gap: 2rem;
+  margin-right: 16rem;
+}
+
+.input-group {
+  display: grid;
+  grid-template-rows: max-content 4rem;
+  grid-row-gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.input-group.textarea {
+  grid-template-rows: max-content 20rem;
+}
+
+.input-group.textarea > textarea,
+input {
+  resize: none;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+  padding: 0.5rem;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 1px;
+}
+
+.submit-btn {
+  background-color: var(--pink-color);
+  outline: none;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 25%;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: var(--pink-color);
+}
+
+.contact-details-container {
+  padding-top: 5rem;
+}
+
+.phone-info,
+.email-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.2rem;
+}
+
+.phone-icon,
+.email-icon {
+  margin-right: 5rem;
+}
+
+.phone-number,
+.email-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 2rem;
+  cursor: pointer;
+  color: black;
+  transition: color 0.2s;
+}
+
+.mare-face {
+  color: black;
+  transition: color 0.2s;
+}
+
+.mare-face:hover {
+  color: var(--pink-color);
+}
+
+.social-icon:hover {
+  color: var(--pink-color);
+}
+
+/* OVO JE DA MI NA E-MAIL AUTOFILU NE MINJA BOJU POZADINA */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+/*
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+*/
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* MEDIA QUERY */
+
+/* 1070px */
+@media only screen and (max-width: 67em) {
+  .form-container {
+    flex-basis: 52%;
+    margin-right: 10rem;
+  }
+}
+
+/* 850px */
+@media only screen and (max-width: 54em) {
+  .form-container {
+    flex-basis: 59%;
+    margin-right: 5rem;
+  }
+}
+
+/* 750px */
+@media only screen and (max-width: 47em) {
+  .contact-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form-container {
+    margin-right: 0;
+  }
+
+  .contact-details-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  .phone-info,
+  .email-info {
+    margin-bottom: 0;
+  }
+
+  .phone-icon,
+  .email-icon {
+    margin-right: 0.5rem;
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 41em) {
+  .contact-details-container {
+    flex-direction: column;
+  }
+
+  .contact-details-container > div:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+/* 500px */
+@media only screen and (max-width: 32em) {
+  .submit-btn {
+    width: 100%;
+  }
+}
